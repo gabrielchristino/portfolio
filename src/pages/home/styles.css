@@ -583,6 +583,7 @@ body {
     background: url("../../assets/images/profile.jpeg");
     background-size: 300%;
     cursor: pointer;
+    border-radius: 0.2em;
 }
 
 .quadrado--0 { background: transparent; }
@@ -601,7 +602,7 @@ body {
     margin: auto;
 	display: grid;
 	grid-column-end: span 3;
-	grid-gap: 0;
+	grid-gap: 0.1em;
 	grid-template-areas:
 		"A B C"
 		"D E F"
