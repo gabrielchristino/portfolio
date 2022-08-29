@@ -4,7 +4,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #050505;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
 
@@ -12,6 +12,7 @@ body {
     margin: 10vh 1vw;
     overflow: scroll;
     height: 98vh;
+    max-width: 900px;
     scroll-snap-points-y: repeat(80vh);
     scroll-snap-type: y mandatory;
 }
@@ -20,6 +21,7 @@ body {
     scroll-snap-align: start;
     margin-bottom: 10vh;
     min-height: 80vh;
+    max-width: 900px;
     padding: 1vh 1vw;
 }
 
@@ -143,6 +145,7 @@ body {
     color: #000;
     border: outset 0.1875em;
     width: 93vw;
+    max-width: 800px;
     left: 1vw;
 }
 
@@ -222,7 +225,7 @@ body {
 
 .barraTarefa8bit {
     position: relative;
-    width: 95vw;
+    width: 92em;
     bottom: 2vh;
 }
 
@@ -235,6 +238,7 @@ body {
 .menu8bit {
     min-width: 17.4em;
     width: 40vw;
+    max-width: 360px;
     height: 15vh;
     top: -2vh;
     position: relative;
@@ -247,6 +251,7 @@ body {
     max-height: 2em;
     min-width: 17em;
     width: 39vw;
+    max-width: 350px;
     flex-direction: row;
     display: flex;
 }
@@ -263,7 +268,7 @@ body {
 
 .corpoWinXp {
     color: #ffffff;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     border-radius: 0.5em;
     background: #00a8a8;
@@ -372,6 +377,7 @@ body {
 .modalXp1 {
     position: relative;
     width: 80vw;
+    max-width: 720px;
     float: left;
     top: 0vh;
 }
@@ -379,6 +385,7 @@ body {
 .modalXp2 {
     position: relative;
     width: 60vw;
+    max-width: 540px;
     float: right;
     top: -1vh;
 }
@@ -391,7 +398,7 @@ body {
 .modalXp3 {
     position: relative;
     width: 36vw;
-    max-width: 25em;
+    max-width: 20em;
     float: left;
     top: 5vh;
 }
@@ -409,7 +416,7 @@ body {
 
 .corpoWinVista {
     color: #ffffff;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     border-radius: 0.5em;
     background: #00a8a8;
@@ -470,7 +477,9 @@ body {
 
 .modalVista1 {
     position: relative;
-    width: 80vw;
+    width: 60vw;
+    min-width: 300px;
+    max-width: 540px;
     top: 5vh;
     left: 1vw;
 }
@@ -505,7 +514,10 @@ body {
 
 .modalVista2 {
     position: relative;
+    float: right;
     top: 2vh;
+    width: 50vw;
+    max-width: 450px;
 }
 
 .linkWinVista {
@@ -520,18 +532,18 @@ body {
     text-align: center;
     box-shadow: inset -0.0625em -0.0625em #91350050,inset 0.125em 0.125em #b8530050,inset -0.125em -0.125em #fa4700cc,inset 0.125em 0.125em #e2400050,inset -0.1875em -0.1875em #cf5300da,inset 0.1875em 0.1875em #e66e0c50, 0 0 0.125em 0.125em #00000070;
     background: linear-gradient(180deg,#ff8513ee,#d66000ee 8%,#e65c00ee 40%,#f14400ee 88%,#e64100ee 93%,#ff5e00ee 95%,#c94000ee 96%,#df5200ee);
-    width: 15vw;
+    width: 12em;
     min-width: 7em;
     height: 15vh;
     float: right;
-    top: -1vh;
+    top: 6vh;
     cursor: pointer;
 }
 
 .topoWidgetWinVista {
     position: relative;
     border-top: #d8d0c4 dotted 0.4em;
-    width: 15vw;
+    width: 12em;
     min-width: 7em;
     height: 2vh;
     top: -1vh;
@@ -544,27 +556,28 @@ body {
     float: left;
     top: 3vh;
     width: 17vw;
+    max-width: 150px;
     min-width: 8em;
     height: 17vh;
     display: flex;
     border-radius: 0.25em;
 }
 
-.tile {
+.quadrado {
     background: url("../../assets/images/profile.jpeg");
     background-size: 300%;
     cursor: pointer;
 }
 
-.tile--empty { background: transparent; }
-.tile--1 { background-position: top left; }
-.tile--2 { background-position: top center; }
-.tile--3 { background-position: top right; }
-.tile--4 { background-position: center left; }
-.tile--5 { background-position: center; }
-.tile--6 { background-position: center right; }
-.tile--7 { background-position: bottom left; }
-.tile--8 { background-position: bottom center; }
+.quadrado--0 { background: transparent; }
+.quadrado--1 { background-position: top left; }
+.quadrado--2 { background-position: top center; }
+.quadrado--3 { background-position: top right; }
+.quadrado--4 { background-position: center left; }
+.quadrado--5 { background-position: center; }
+.quadrado--6 { background-position: center right; }
+.quadrado--7 { background-position: bottom left; }
+.quadrado--8 { background-position: bottom center; }
 
 .gridImgWinVista {
     width: 90%;
@@ -579,10 +592,117 @@ body {
 		"G H I";
 }
 
-.designPróprio {
-    color: #ffffff;
-    font-family: 'Roboto Flex', sans-serif;
+.designProprio {
+    color: #222;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     border-radius: 0.5em;
-    background: #00a8a8;
+    background: #D1D8EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.janelaDesign {
+    border-radius: 2em;
+    width: 80vw;
+    max-width: 720px;
+    height: 60vh;
+    background: #D1D8EC;
+    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.3em;
+}
+
+.barraEsquerda {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 0.5em;
+    width: 30vw;
+    max-width: 270px;
+    height: 60vh;
+    margin-right: 0.3em;
+    box-shadow: inset 9.91px 9.91px 15px #BEC5D7, inset -9.91px -9.91px 15px #E4EBFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+.barraEsquerda p {
+    margin: 0;
+    font-size: clamp(0.625em, 2vw, 1em);
+    text-align: center;
+}
+
+.barraEsquerda .nomeDesignProprio {
+    font-weight: 900;
+    font-size: clamp(0.75em, 3.5vw, 1.75em);
+    color: teal;
+}
+
+.imagemProfile {
+    width: 60%;
+    aspect-ratio: 1;
+    max-width: 6em;
+    border-radius: 50%;
+    margin: 1vh auto;
+    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProfileBarraEsquerda {
+    width: 90%;
+    border-radius: 50%;
+    margin: 1vh auto;
+    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+}
+
+.ladoDireito {
+    width: 50vw;
+    max-width: 450px;
+    height: 60vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.barraTopo {
+    width: 50vw;
+    max-width: 450px;
+    height: 8vh;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #D1D8EC;
+    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+}
+
+.conteudoTela {
+    width: 50vw;
+    max-width: 450px;
+    height: 46vh;
+
+}
+
+.rodapeTela {
+    width: 50vw;
+    max-width: 450px;
+    height: 5vh;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 2em;
+    box-shadow: inset 9.91px 9.91px 15px #BEC5D7, inset -9.91px -9.91px 15px #E4EBFF;
+
 }
