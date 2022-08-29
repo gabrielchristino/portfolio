@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #050505;
     font-family: 'Roboto', sans-serif;
@@ -12,7 +12,7 @@ body {
     margin: 10vh 1vw;
     overflow: scroll;
     height: 98vh;
-    max-width: 900px;
+    max-width: 100vw;
     scroll-snap-points-y: repeat(80vh);
     scroll-snap-type: y mandatory;
 }
@@ -23,6 +23,8 @@ body {
     height: 80vh;
     max-width: 900px;
     padding: 1vh 1vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .corpoAscii {
@@ -226,6 +228,7 @@ body {
 .barraTarefa8bit {
     position: relative;
     width: 92em;
+    max-width: 870px;
     bottom: 2vh;
 }
 
@@ -615,6 +618,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10em;
 }
 
 .janelaDesign {
@@ -655,7 +659,7 @@ body {
     background-color: teal;
     box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
     margin: 3em 1em 0;
-    padding: 1em;
+    padding: 1em 0.5em;
     color: #D1D8EC;
     font-size: 0.7em;
     cursor: pointer;
