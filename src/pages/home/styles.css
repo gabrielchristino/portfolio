@@ -31,7 +31,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
     background: #050505;
-    border: 1px solid #5a5a5a;
+    border: 0.125em solid #5a5a5a;
 }
 
 .apresentacao {
@@ -139,9 +139,9 @@ body {
 .janela8bit {
     background: #efefef;
     position: relative;
-    border: 1px solid #000;
+    border: 0.125em solid #000;
     color: #000;
-    border: outset 3px;
+    border: outset 0.1875em;
     width: 93vw;
     left: 1vw;
 }
@@ -150,10 +150,10 @@ body {
     background: #000080;
     color: #fff;
     text-align: center;
-    line-height: 24px;
-    height: 30px;
+    line-height: 1.5em;
+    height: 1.875em;
     width: 100%;
-    border-bottom: solid 1px #000;
+    border-bottom: solid 0.125em #000;
 }
 
 .textoTitulo8bit {
@@ -201,16 +201,16 @@ body {
     background: #c0c0c0;
     color: #000;
     display: inline-block;
-    margin: 0px;
+    margin: 0;
     float: left;
-    border: outset 3px;
+    border: outset 0.1875em;
     display: flex;
     align-items: center;
     cursor: default;
 }
 
 .botao8bit:active {
-    border: inset 3px;
+    border: inset 0.1875em;
 }
 
 .texto8bit {
@@ -271,95 +271,132 @@ body {
     background-size: cover;
 }
 
+.corpoWinXp .mouseWinXp {
+    position: relative;
+    float: left;
+    z-index: 999;
+    min-width: 1.25em;
+    max-width: 1.5em;
+    animation: mousePasseandoTela 10s infinite;
+}
+
+@keyframes mousePasseandoTela {
+    0% {
+        top: 1vh;
+        left: 10vw;
+    }
+    20% {
+        top: 20vh;
+        left: 30vw;
+    }
+    30% {
+        top: 50vh;
+        left: 10vw;
+    }
+    50% {
+        top: 40vh;
+        left: 60vw;
+    }
+    75% {
+        top: 10vh;
+        left: 70vw;
+    }
+    100% {
+        top: 1vh;
+        left: 10vw;
+    }
+    
+}
+
 .janelaXp {
-    box-shadow: inset -1px -1px #00138c,inset 1px 1px #0831d9,inset -2px -2px #001ea0,inset 2px 2px #166aee,inset -3px -3px #003bda,inset 3px 3px #0855dd;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    padding: 0 0 3px;
+    box-shadow: inset -0.0625em -0.0625em #00138c,inset 0.125em 0.125em #0831d9,inset -0.125em -0.125em #001ea0,inset 0.125em 0.125em #166aee,inset -0.1875em -0.1875em #003bda,inset 0.1875em 0.1875em #0855dd;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    padding: 0 0 0.1875em;
     background: #ece9d8;
 }
 
 .tituloXp {
     background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
-    padding: 3px 5px 3px 3px;
-    border-top: 1px solid #0831d9;
-    border-left: 1px solid #0831d9;
-    border-right: 1px solid #001ea0;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 7px;
-    font-size: 13px;
-    text-shadow: 1px 1px #0f1089;
-    height: 21px;
+    padding: 0.1875em 0.3125em 0.1875em 0.1875em;
+    border-top: 0.125em solid #0831d9;
+    border-left: 0.125em solid #0831d9;
+    border-right: 0.125em solid #001ea0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.4375em;
+    font-size: 0.8125em;
+    text-shadow: 0.125em 0.125em #0f1089;
+    height: 1.3125em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .tituloXp button {
-    min-width: 21px;
-    min-height: 21px;
-    margin-left: 2px;
+    min-width: 1.3125em;
+    min-height: 1.3125em;
+    margin-left: 0.125em;
     padding: 0;
     display: block;
-    font-size: 15px;
+    font-size: 1em;
     box-sizing: border-box;
-    border: 1px solid #003c74;
+    border: 0.125em solid #003c74;
     background: linear-gradient(180deg,rgb(243, 11, 11),#e21818 86%,#cf1919);
-    box-shadow: inset 2px 2px 5px -1px #fff;
-    border-radius: 3px;
+    box-shadow: inset 0.125em 0.125em 0.3125em -0.0625em #fff;
+    border-radius: 0.1875em;
     color: #fff;
 }
 
 .areaJanelaXp {
-    margin: 8px;
+    margin: 0.5em;
     color: #222;
 }
 
 .botaoXp:hover,
 .botaoXp:active ,
 .botaoXp:focus {
-    box-shadow: inset -1px 1px #fff0cf,inset 1px 2px #fdd889,inset -2px 2px #fbc761,inset 2px -2px #e5a01a !important;
+    box-shadow: inset -0.0625em 0.125em #fff0cf,inset 0.125em 0.125em #fdd889,inset -0.125em 0.125em #fbc761,inset 0.125em -0.125em #e5a01a !important;
 }
 
 .botaoXp {
     box-sizing: border-box;
-    border: 1px solid #003c74;
+    border: 0.125em solid #003c74;
     background: linear-gradient(180deg,#fff,#ecebe5 86%,#d8d0c4);
-    border-radius: 3px;
+    border-radius: 0.1875em;
     cursor: pointer;
     z-index: 999;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
-.modal1 {
+.modalXp1 {
     position: relative;
     width: 80vw;
     float: left;
-    top: 8vh;
+    top: 0vh;
 }
 
-.modal2 {
+.modalXp2 {
     position: relative;
     width: 60vw;
     float: right;
-    top: -5vh;
+    top: -1vh;
 }
 
-.modal2 .botaoXp {
+.modalXp2 .botaoXp {
     float: right;
     margin-bottom: 1vh;
 }
 
-.modal3 {
+.modalXp3 {
     position: relative;
-    width: 40vw;
-    max-width: 31em;
+    width: 36vw;
+    max-width: 25em;
     float: left;
-    top: -30vh;
+    top: 5vh;
 }
 
-.modal3 .areaJanelaXp {
+.modalXp3 .areaJanelaXp {
     display: flex;
     justify-content: center;
 }
@@ -376,6 +413,170 @@ body {
     font-size: 1em;
     border-radius: 0.5em;
     background: #00a8a8;
+    background-image: url('../../assets/images/winVistaWp.jpg');
+    background-size: cover;
+}
+
+.janelaVista {
+    box-shadow: inset -0.0625em -0.0625em #86868650,inset 0.125em 0.125em #d9dbe250,inset -0.125em -0.125em #a7a7a750,inset 0.125em 0.125em #dfe5f050,inset -0.1875em -0.1875em #dbdbdb50,inset 0.1875em 0.1875em #e2e5eb50, 0 0 0.125em 0.125em #00000070;
+    border-top-left-radius: 0.3125em;
+    border-top-right-radius: 0.3125em;
+    padding: 0 0 0.1875em;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloVista {
+    background: linear-gradient(180deg,#f1f7fc50,#dbdbdb50 8%,#e6e6e650 40%,#f0f0f050 88%,#e9e9e950 93%,#ffffff50 95%,#dadada50 96%,#dbdbdb50);
+    padding: 0.1875em 0.3125em 0.1875em 0.1875em;
+    border-top: 0.125em solid #f1f7fc50;
+    border-left: 0.125em solid #f1f7fc50;
+    border-right: 0.125em solid #e6e6e650;
+    border-top-left-radius: 0.3125em;
+    border-top-right-radius: 0.3125em;
+    font-size: 1em;
+    text-shadow: 0.125em 0.125em #e6e6e650;
+    height: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloVista button {
+    position: relative;
+    float: right;
+    right: -0.25em;
+    top: -0.625em;
+    min-width: 3em;
+    min-height: 1.3125em;
+    margin-left: 0.125em;
+    padding: 0;
+    display: block;
+    font-size: 1em;
+    box-sizing: border-box;
+    background: linear-gradient(180deg,#f3eded10,#dfcdcd10 86%,#d3c0c010);
+    box-shadow: inset 0.125em 0.125em 0.3125em -0.0625em #d3c0c010;
+    border-radius: 0.1875em;
+    color: #fff;
+}
+
+.areaJanelaVista {
+    margin: 0.125em 0.1875em;
+    padding: 0.5em 0.5em 2em 0.5em;
+    color: #222;
+    font-size: 0.8em;
+    background: #ece9d8;
+}
+
+.modalVista1 {
+    position: relative;
+    width: 80vw;
+    top: 5vh;
+    left: 1vw;
+}
+
+.modalVista1 .tituloVista button {
+    background: linear-gradient(180deg,#ff0000d0,#cc0000c7 86%,#ff2323e3);
+    cursor: pointer;
+}
+
+.modalVista1 .tituloVista button:hover {
+    background: linear-gradient(180deg,#ff0000,#cc0000 86%,#ff2323);
+}
+
+.modalVista1 .tituloVista button::after {
+    content: "Voltar para 2019";
+    position: absolute;
+    float: right;
+    top: 1.5em;
+    right: 3em;
+    font-size: 0.75em;
+    width: 16ch;
+    padding: 0.1em;
+    color: #222;
+    background-color: #ffeac1;
+    border: #fbc761 solid 1px;
+}
+
+.modalVista1 .tituloVista button::after:hover {
+    content: "Voltar para 2019";
+    background-color: #865d09;
+}
+
+.modalVista2 {
+    position: relative;
+    top: 2vh;
+}
+
+.linkWinVista {
+    color:blue;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.widgetWinVista {
+    position: relative;
+    border-top: #d8d0c4 groove 0.3em;
+    text-align: center;
+    box-shadow: inset -0.0625em -0.0625em #91350050,inset 0.125em 0.125em #b8530050,inset -0.125em -0.125em #fa4700cc,inset 0.125em 0.125em #e2400050,inset -0.1875em -0.1875em #cf5300da,inset 0.1875em 0.1875em #e66e0c50, 0 0 0.125em 0.125em #00000070;
+    background: linear-gradient(180deg,#ff8513ee,#d66000ee 8%,#e65c00ee 40%,#f14400ee 88%,#e64100ee 93%,#ff5e00ee 95%,#c94000ee 96%,#df5200ee);
+    width: 15vw;
+    min-width: 7em;
+    height: 15vh;
+    float: right;
+    top: -1vh;
+    cursor: pointer;
+}
+
+.topoWidgetWinVista {
+    position: relative;
+    border-top: #d8d0c4 dotted 0.4em;
+    width: 15vw;
+    min-width: 7em;
+    height: 2vh;
+    top: -1vh;
+}
+
+.widgetFotoWinVista {
+    background: linear-gradient(180deg,#000000cc,#0c0c0c60 ,rgba(0, 0, 0, 0.767));
+    box-shadow: inset -0.0625em -0.0625em #86868650,inset 0.125em 0.125em #d9dbe250,inset -0.125em -0.125em #a7a7a750,inset 0.125em 0.125em #dfe5f050,inset -0.1875em -0.1875em #dbdbdb50,inset 0.1875em 0.1875em #e2e5eb50, 0 0 0.125em 0.125em #00000070;
+    position: relative;
+    float: left;
+    top: 3vh;
+    width: 17vw;
+    min-width: 8em;
+    height: 17vh;
+    display: flex;
+    border-radius: 0.25em;
+}
+
+.tile {
+    background: url("../../assets/images/profile.jpeg");
+    background-size: 300%;
+    cursor: pointer;
+}
+
+.tile--empty { background: transparent; }
+.tile--1 { background-position: top left; }
+.tile--2 { background-position: top center; }
+.tile--3 { background-position: top right; }
+.tile--4 { background-position: center left; }
+.tile--5 { background-position: center; }
+.tile--6 { background-position: center right; }
+.tile--7 { background-position: bottom left; }
+.tile--8 { background-position: bottom center; }
+
+.gridImgWinVista {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+	display: grid;
+	grid-column-end: span 3;
+	grid-gap: 0;
+	grid-template-areas:
+		"A B C"
+		"D E F"
+		"G H I";
 }
 
 .designPróprio {
