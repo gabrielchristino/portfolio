@@ -13,3 +13,7 @@ function moverQuadrado(quadrado) {
     quadrado0.className = atual;
     quadrado.className = vazio;
 }
+
+function navegarPara(link) {
+    window.open(link, '_blank');
+}

@@ -20,7 +20,7 @@ body {
 .secao {
     scroll-snap-align: start;
     margin-bottom: 10vh;
-    min-height: 80vh;
+    height: 80vh;
     max-width: 900px;
     padding: 1vh 1vw;
 }
@@ -422,9 +422,12 @@ body {
     background: #00a8a8;
     background-image: url('../../assets/images/winVistaWp.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .janelaVista {
+    position: relative;
     box-shadow: inset -0.0625em -0.0625em #86868650,inset 0.125em 0.125em #d9dbe250,inset -0.125em -0.125em #a7a7a750,inset 0.125em 0.125em #dfe5f050,inset -0.1875em -0.1875em #dbdbdb50,inset 0.1875em 0.1875em #e2e5eb50, 0 0 0.125em 0.125em #00000070;
     border-top-left-radius: 0.3125em;
     border-top-right-radius: 0.3125em;
@@ -515,9 +518,14 @@ body {
 .modalVista2 {
     position: relative;
     float: right;
-    top: 2vh;
+    right: -30vw;
+    top: 0;
     width: 50vw;
     max-width: 450px;
+}
+
+.modalVista2 .areaJanelaVista {
+    min-height: 4em;
 }
 
 .linkWinVista {
@@ -536,8 +544,12 @@ body {
     min-width: 7em;
     height: 15vh;
     float: right;
-    top: 6vh;
+    top: 2vh;
     cursor: pointer;
+}
+
+.widgetWinVista p {
+    padding: 1em;
 }
 
 .topoWidgetWinVista {
@@ -554,11 +566,12 @@ body {
     box-shadow: inset -0.0625em -0.0625em #86868650,inset 0.125em 0.125em #d9dbe250,inset -0.125em -0.125em #a7a7a750,inset 0.125em 0.125em #dfe5f050,inset -0.1875em -0.1875em #dbdbdb50,inset 0.1875em 0.1875em #e2e5eb50, 0 0 0.125em 0.125em #00000070;
     position: relative;
     float: left;
-    top: 3vh;
+    left: 50vw;
+    top: -13vh;
     width: 17vw;
     max-width: 150px;
     min-width: 8em;
-    height: 17vh;
+    padding: 0.3em;
     display: flex;
     border-radius: 0.25em;
 }
@@ -581,7 +594,7 @@ body {
 
 .gridImgWinVista {
     width: 90%;
-    height: 90%;
+    aspect-ratio: 1;
     margin: auto;
 	display: grid;
 	grid-column-end: span 3;
@@ -601,6 +614,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .janelaDesign {
@@ -634,6 +648,63 @@ body {
     float: left;
 }
 
+.botaoDesignProprio {
+    position: relative;
+    bottom: 0;
+    border-radius: 2em;
+    background-color: teal;
+    box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
+    margin: 3em 1em 0;
+    padding: 1em;
+    color: #D1D8EC;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.botaoDesignProprio + .social {
+    padding: 0.5em;
+    border-radius: 50%;
+    left: -2.5em;
+    margin: 1em 1em 0;
+}
+
+.botaoDesignProprio + .social:hover::after,
+.botaoDesignProprio + .social:active::after {
+    content: "";
+    position: absolute;
+    border-radius: 2em;
+    padding: 0.2em;
+    margin-left: 1em;
+    font-size: 1.5em;
+    color: #222;
+    background: #D1D8EC;
+    box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
+}
+
+.botaoDesignProprio + .github:hover::after,
+.botaoDesignProprio + .github:active::after {
+    content: "Github";
+}
+
+.botaoDesignProprio + .linkedin:hover::after,
+.botaoDesignProprio + .linkedin:active::after {
+    content: "Linkedin";
+}
+
+.botaoDesignProprio img {
+    height: 3em;
+}
+
+.botaoDesignProprio:hover,
+.botaoDesignProprio:active,
+.conteudoTela .lista .item:hover,
+.conteudoTela .lista .item:active,
+.conteudoTela .lista .marcador:hover,
+.conteudoTela .lista .marcador:active  {
+    background: linear-gradient(145deg, #009898, #006868);
+    box-shadow: inset 3.9px 3.9px 6px #006666, inset -3.9px -3.9px 6px #009A9A;
+}
+
 .barraEsquerda p {
     margin: 0;
     font-size: clamp(0.625em, 2vw, 1em);
@@ -652,7 +723,7 @@ body {
     max-width: 6em;
     border-radius: 50%;
     margin: 1vh auto;
-    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,7 +733,7 @@ body {
     width: 90%;
     border-radius: 50%;
     margin: 1vh auto;
-    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
 }
 
 .ladoDireito {
@@ -685,24 +756,48 @@ body {
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     background: #D1D8EC;
-    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
 }
 
 .conteudoTela {
-    width: 50vw;
+    box-sizing: border-box;
+    height: 60vh;
     max-width: 450px;
-    height: 46vh;
-
+    padding: 0.3em;
+    font-size: 0.75em;
 }
 
-.rodapeTela {
-    width: 50vw;
-    max-width: 450px;
-    height: 5vh;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 2em;
-    box-shadow: inset 9.91px 9.91px 15px #BEC5D7, inset -9.91px -9.91px 15px #E4EBFF;
+.conteudoTela .lista {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
 
+.conteudoTela .lista .marcador {
+    height: 1.5em;
+    border-radius: 50%;
+    margin: auto 0.5em;
+    aspect-ratio: 1;
+    border: #008080 solid 0.5em;
+    background: #D1D8EC;
+    box-shadow: 4.2px 4.2px 7px #006363, -4.2px -4.2px 7px #009D9D;
+    box-sizing: border-box;
+}
+
+.conteudoTela .lista .item {
+    border-radius: 0.5em;
+    background-color: teal;
+    color: #D1D8EC;
+    box-shadow: 3.9px 3.9px 6px #A7ADBD, -3.9px -3.9px 6px #FBFFFF;
+    margin: 1em;
+    padding: 0.3em;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.conteudoTela .lista .item p {
+    padding: 0;
+    margin: 0;
 }
