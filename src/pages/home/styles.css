@@ -92,7 +92,6 @@ body {
         piscarCursor 0.5s;
     animation-iteration-count: 1, infinite;
     animation-delay: 3s;
-    cursor: pointer;
 }
 
 @keyframes digitandoNome {
@@ -119,10 +118,7 @@ body {
     }
 }
 
-
-
 .corpo8bit,
-.corponovo,
 .final {
     display: flex;
     flex-direction: column;
@@ -210,7 +206,7 @@ body {
     border: outset 3px;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: default;
 }
 
 .botao8bit:active {
@@ -230,10 +226,6 @@ body {
     bottom: 2vh;
 }
 
-.barraTarefa8bit .botao8bit {
-    cursor: default;
-}
-
 .imagemMenu8bit {
     width: 3vw;
     max-width: 1.5em;
@@ -249,7 +241,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    cursor: default;
 }
 
 .menu8bit .botao8bit {
@@ -258,11 +249,97 @@ body {
     width: 39vw;
     flex-direction: row;
     display: flex;
-    cursor: default;
 }
 
 .menu8bit .botao8bit:nth-child(2) {
     background: #000080;
     color: #fff;
     cursor: pointer;
+}
+
+.title8bit .botao8bit, .seguir {
+    cursor: pointer;
+}
+
+
+.corpoWinXp {
+    color: #ffffff;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1em;
+    border-radius: 0.5em;
+    background: #00a8a8;
+}
+
+.janelaXp {
+    box-shadow: inset -1px -1px #00138c,inset 1px 1px #0831d9,inset -2px -2px #001ea0,inset 2px 2px #166aee,inset -3px -3px #003bda,inset 3px 3px #0855dd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 0 3px;
+    background: #ece9d8;
+}
+
+.tituloXp {
+    background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+    padding: 3px 5px 3px 3px;
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    font-size: 13px;
+    text-shadow: 1px 1px #0f1089;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloXp button {
+    min-width: 21px;
+    min-height: 21px;
+    margin-left: 2px;
+    padding: 0;
+    display: block;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid #003c74;
+    background: linear-gradient(180deg,rgb(243, 11, 11),#e21818 86%,#cf1919);
+    box-shadow: inset 2px 2px 5px -1px #fff;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.areaJanelaXp {
+    margin: 8px;
+    color: #222;
+}
+
+.botaoXp:hover,
+.botaoXp:active ,
+.botaoXp:focus {
+    box-shadow: inset -1px 1px #fff0cf,inset 1px 2px #fdd889,inset -2px 2px #fbc761,inset 2px -2px #e5a01a !important;
+}
+
+.botaoXp {
+    box-sizing: border-box;
+    border: 1px solid #003c74;
+    background: linear-gradient(180deg,#fff,#ecebe5 86%,#d8d0c4);
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 999;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+.modal1 {
+    position: relative;
+    width: 80vw;
+    float: left;
+    top: 10vh;
+}
+.modal2 {
+    position: relative;
+    width: 60vw;
+    float: right;
 }
