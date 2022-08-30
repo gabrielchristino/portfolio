@@ -502,7 +502,7 @@ body {
 }
 
 .modalVista1 .tituloVista button::after {
-    content: "Voltar para 2019";
+    content: "Voltar para 2018";
     position: absolute;
     float: right;
     top: 1.5em;
@@ -516,7 +516,7 @@ body {
 }
 
 .modalVista1 .tituloVista button::after:hover {
-    content: "Voltar para 2019";
+    content: "Voltar para 2018";
     background-color: #865d09;
 }
 
